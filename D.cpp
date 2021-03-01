@@ -1,3 +1,5 @@
+// Time complexity - O(nm) 
+
 #include<bits/stdc++.h>
 using namespace std;
  
