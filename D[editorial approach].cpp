@@ -2,6 +2,9 @@
 
 #include<bits/stdc++.h>
 using namespace std;
+
+const int N = 1010 ; 
+int a[N][N] ; 
  
 int main() {
  
@@ -10,7 +13,6 @@ int main() {
         return cout <<"NO", 0 ; 
     }
  
-    int a[n][m] = {} ;
     for(int i = 0 ; i < m; ++i) a[0][i] = i ; 
  
     for(int i = 1 ; i < n ; ++i) {
