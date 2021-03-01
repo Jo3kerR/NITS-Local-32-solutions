@@ -1,4 +1,4 @@
-// Time complexity - O(NlogN) 
+// Time complexity - O(KlogK) 
 
 #include<bits/stdc++.h>
 using namespace std;
