@@ -14,4 +14,5 @@ int main() {
         for(int i = 1 ; i < n ; ++i) 
             ans = max(ans, abs(v[i] - v[i-1])) ; 
         cout << ans << '\n' ;
-  
+    }
+}
