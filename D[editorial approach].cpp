@@ -13,15 +13,15 @@ int main() {
         return cout <<"NO", 0 ; 
     }
  
-    for(int i = 0 ; i < m; ++i) a[0][i] = i ; 
+    for(int i = 0 ; i < m; ++i) a[0][i] = i ; // schedule of the imposter
  
     for(int i = 1 ; i < n ; ++i) {
         for(int j = i-1 ; j < m ; ++j) a[i][j] = j ; 
-        for(int j = 0 ; j < i-2 ; ++j) a[i][j] = j+1;
-        if(i-2 >= 0) a[i][i-2] = 0 ;  
+        for(int j = 0 ; j < i-2 ; ++j) a[i][j] = j+1; // cyclically shifting the first 
+        if(i-2 >= 0) a[i][i-2] = 0 ;                  // (i-1) rooms by one unit left
     }
  
-    a[2][0] = 2, a[2][2] = 0 ; 
+    a[2][0] = 2, a[2][2] = 0 ; // swap first and third rooms of 2nd crewmate
  
     cout << "YES\n" ; 
     for(int i = 0 ; i < n ; ++i) {
